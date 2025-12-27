@@ -26,7 +26,8 @@ A lightweight deception engine that provides **zero-false-positive breach confir
 ## Coming Soon
 
 - [x] Project structure
-- [ ] CLI tool for generating honey-credentials
+- [x] Credential generator (core logic complete)
+- [ ] CLI interface (coming next)
 - [ ] Stateless listener service
 - [ ] Docker Compose deployment
 - [ ] Kubernetes manifests
