@@ -23,11 +23,43 @@ A lightweight deception engine that provides **zero-false-positive breach confir
 - ✅ **Forces attacker uncertainty** - Every credential becomes suspect
 - ✅ **Integrates with existing tools** - Enriches your SIEM/EDR alerts
 
-## Coming Soon
+
+## Quick Start
+
+### Installation
+```bash
+pip install signal-flare
+```
+
+### Generate Credentials
+```bash
+# Set your secret key
+export FLARE_SECRET=$(openssl rand -hex 32)
+
+# Generate fake AWS credential
+signal-flare generate --type aws
+```
+
+**Output:**
+```
+# Fake AWS Credential
+AWS_ACCESS_KEY_ID=AKIAE14E8AE374F6665C
+AWS_SECRET_ACCESS_KEY=950K_Wbl-ZLJmeApGaiOcbDGVWybr3lIjh66o2ho
+FLARE_ID=1766816788:72018eb3f5cb75779ae152f79a323372fd6c5069c4042a42d02475fd712282e9
+```
+
+## Features
+
+- ✅ **Zero false positives** - Legitimate users never touch honey-credentials
+- ✅ **Instant ground truth** - Know immediately when credentials are stolen
+- ✅ **CLI tool** - Easy credential generation
+- ✅ **Pip installable** - Standard Python package
+
+## Project Status
 
 - [x] Project structure
-- [x] Credential generator (core logic complete)
-- [ ] CLI interface (coming next)
+- [x] CLI tool for generating honey-credentials ✅
+- [x] Pip installable package ✅
 - [ ] Stateless listener service
 - [ ] Docker Compose deployment
 - [ ] Kubernetes manifests
