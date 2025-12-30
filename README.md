@@ -57,10 +57,10 @@ FLARE_ID=1766816788:72018eb3f5cb75779ae152f79a323372fd6c5069c4042a42d02475fd7122
 
 ## Project Status
 
-- [x] Project structure
+- [x] Project structure ✅
 - [x] CLI tool for generating honey-credentials ✅
 - [x] Pip installable package ✅
-- [ ] Stateless listener service
+- [x] Listener service with breach detection ✅
 - [ ] Docker Compose deployment
 - [ ] Kubernetes manifests
 - [ ] Complete documentation
